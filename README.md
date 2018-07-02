@@ -1,4 +1,4 @@
-# slack-notification-scripts
+# Poster Grrrl
 A collection of Slack notification scripts to simplify notifying from shell scripts
 
 usage: app-notify.py [-h] --playername PLAYERNAME --version VERSION -u URL --build BUILD --slug SLUG --title TITLE --playerbase PLAYERBASE --playerend PLAYEREND
