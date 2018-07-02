@@ -21,7 +21,7 @@ args = parser.parse_args()
 print("Here's the Player Name: " + args.playername)
 
 # Send the Notification
-prod_url = args.playerbase + args.build + args.playerend
+prod_url = args.playerbase + args.version + args.playerend
 
 payload = "{\n  \"attachments\": [\n    {\n      \"fallback\": \"" + args.playername + " Build " + args.version + " Delivered\",\n      \"color\": \"#2eb886\",\n      \"title\": \" " + args.playername + " Build " + args.version + " Delivered\",\n      \"title_link\": \"https://bitbucket.org/realeyesmedia/" + args.slug + "/addon/pipelines/home#!/results/" + args.build + "\",\n      \"text\": \"Build number: " + args.version + "\",\n      \"fields\": [\n        {\n          \"title\": \"" + args.title + "\",\n          \"value\": \"" + prod_url + "\",\n          \"short\": false\n        }\n      ]\n    }\n  ]\n}"
 
